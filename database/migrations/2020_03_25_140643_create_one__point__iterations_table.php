@@ -16,6 +16,7 @@ class CreateOnePointIterationsTable extends Migration
         Schema::create('one__point__iterations', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->float('XN');
+            $table->float('Iteration');
             $table->timestamps();
         });
     }

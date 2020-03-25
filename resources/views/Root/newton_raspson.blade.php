@@ -34,7 +34,7 @@
       'Iteration' => $iteration,
       'Error' => $Error
     ];
-    App\Newton_Raspson::insert($dataInsert);
+    \App\Newton_Raspson::insert($dataInsert);
   }
 ?>
 </div>

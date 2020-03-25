@@ -32,7 +32,7 @@
 
         $dataInsert = [
   			'XN'=>$XN,
-            // 'Iteration'=>$iteration
+            'Iteration'=>$iteration
   		];
 
   		\App\One_Point_Iteration::insert($dataInsert);

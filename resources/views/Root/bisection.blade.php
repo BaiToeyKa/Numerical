@@ -16,7 +16,7 @@
 <div class="shadow px-3 py-3 main col-10 h-100 rounded mx-auto" align="center" style="background-color:#f1f1f1">
 	<h3 style="text-align: center" class="text-danger">Exemple</h3>
 	<br>
-	<h5><p>จงใช้วิธี Bisection เพื่อคำนวณหาค่า x^3-x^2+2 โดยกำหนดค่าขอบเขตเริ่มต้น ระหว่าง 2 และ 3</h5>
+	<h5><p>จงใช้วิธี Bisection เพื่อคำนวณหาค่า x^3-x^2+2 โดยกำหนดค่าขอบเขตเริ่มต้น ระหว่าง -2 และ 3</h5>
 	
 <?php 
 	$EPSILON = 0.01; 
@@ -34,7 +34,7 @@
 		global $EPSILON; 
 		if (func($XL) * func($XR) >= 0) 
 		{ 
-			echo "You have not assumed " . "right a and b","\n"; 
+			echo "You have not assumed " . "right XL and XR","\n"; 
 			return; 
 		} 
 
@@ -70,7 +70,7 @@
 			// dd($dataInsert);
 			\App\Bisection::insert($dataInsert);
 		} 
-		echo "The value of root is : " , $XM ,"The error is : ",$ERROR; 
+		echo "The value of root is : " , $XM ,"The error is : ", $ERROR; 
 		return $XM;
 	} 
 
