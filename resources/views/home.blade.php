@@ -47,7 +47,7 @@
             </div>
         </div>
 
-        <div class mt-2>
+        <!-- <div class mt-2>
             <div class="shadow px-3 py-3 main col-10 h-100 rounded mx-auto" style="background-color:#f1f1f1">
                 <h4 style="text-align: center">SOLUTION OF LINEAR ALGEBRAIC EQUATIONS</h4>
                 <div class="row">
@@ -102,7 +102,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <div class mt-2>
             <div class="shadow px-3 py-3 main col-10 h-100 rounded mx-auto" style="background-color:#f1f1f1">
@@ -111,28 +111,21 @@
                     <div class="col-md-4 mt-2">
                         <div class="shadow card rounded border border-dark bg-success" id="card">
                             <div class="card-body mx-auto">
-                                <a class="text-white" href="bisection.blade.php" id="card-link">Bisection Method</a>
+                                <a class="text-white" href="#" id="card-link">Newton's Divided-Difference</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 mt-2">
                         <div class="shadow card rounded border border-dark  bg-success" id="card">
                             <div class="card-body mx-auto">
-                                <a class="text-white" href="False-Position.blade.php" id="card-link">False-Position Method</a>
+                                <a class="text-white" href="#" id="card-link">Lagrange Polynomials</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 mt-2">
                         <div class="shadow card rounded border border-dark  bg-success" id="card">
                             <div class="card-body mx-auto">
-                                <a class="text-white" href="One-Point.blade.php" id="card-link">Simple One-Point Iteration</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mt-2">
-                        <div class="shadow card rounded border border-dark  bg-success" id="card">
-                            <div class="card-body mx-auto">
-                                <a class="text-white" href="Secant.blade.php" id="card-link">Secant Method</a>
+                                <a class="text-white" href="#" id="card-link">Spline Interpolation</a>
                             </div>
                         </div>
                     </div>

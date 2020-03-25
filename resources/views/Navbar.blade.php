@@ -34,7 +34,7 @@
                         <a class="dropdown-item" href="#">Secant Method</a>
                     </div>
                 </li>
-                <li class="nav-item dropdown">
+                <!-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
                         SOLUTION OF LINEAR ALGEBRAIC EQUATIONS
                     </a>
@@ -47,15 +47,15 @@
                         <a class="dropdown-item" href="#">Jacobi Iteration</a>
                         <a class="dropdown-item" href="#">Conjugate Gradient</a>
                     </div>
-                </li>
+                </li> -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
                         INTERPOLATION
                     </a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="#">Newton's Divided-Difference</a>
-                        <a class="dropdown-item" href="#">Lagrang</a>
-                        <a class="dropdown-item" href="#">Spline</a>
+                        <a class="dropdown-item" href="#">Lagrange Polynomials</a>
+                        <a class="dropdown-item" href="#">Spline Interpolation</a>
                     </div>
                 </li>
             </ul>
