@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Bisection;
+use App\One_Point_Iteration;
 
-class BisectionController extends Controller
+class ShowOnePointIterationController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,10 +15,8 @@ class BisectionController extends Controller
     public function index()
     {
         //
-
-        //$bisections = Bisection::all()->toArray();
-        // return view('Root.bisection', compact('bisections'));
-        return view('Root.bisection');
+        $one_point_iteration = One_Point_Iteration::all()->toArray();
+        return view('Root.show_one_point_iteration', compact('one_point_iteration'));
     }
 
     /**
@@ -39,8 +37,7 @@ class BisectionController extends Controller
      */
     public function store(Request $request)
     {
-
-
+        //
     }
 
     /**

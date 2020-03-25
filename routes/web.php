@@ -15,5 +15,23 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('bisection','BisectionController@index');
-Route::get('falsePosition','FalsePositionController@index');
+//Root
+Route::get('homepage', function(){
+    return view('home');
+});
+
+Route::resource('Bisection', 'BisectionController');
+Route::get('show/Bisection', 'ShowBisectionController@index');
+
+Route::resource('FalsePosition', 'FalsePositionController');
+Route::get('show/FalsePosition', 'ShowFalsePositionController@index');
+
+Route::resource('OnePointIteration', 'OnePointIterationController');
+Route::get('show/OnePointIteration', 'ShowOnePointIterationController@index');
+
+Route::get('NewtonRarpson', 'NewtonRaspsonController@index');
+Route::get('show/NewtonRarpson', 'ShowNewtonRarpsoncontroller@index');
+
+Route::get('Secant', 'SecantController@index');
+Route::get('show/Secant', 'ShowSecantControlle@index');
+//Linear

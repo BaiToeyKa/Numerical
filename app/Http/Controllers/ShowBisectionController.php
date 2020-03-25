@@ -3,9 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+
 use App\Bisection;
 
-class BisectionController extends Controller
+class ShowBisectionController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,11 +15,8 @@ class BisectionController extends Controller
      */
     public function index()
     {
-        //
-
-        //$bisections = Bisection::all()->toArray();
-        // return view('Root.bisection', compact('bisections'));
-        return view('Root.bisection');
+      $bisections = Bisection::all()->toArray();
+      return view('Root.show_bisection', compact('bisections'));
     }
 
     /**
@@ -39,8 +37,7 @@ class BisectionController extends Controller
      */
     public function store(Request $request)
     {
-
-
+        //
     }
 
     /**

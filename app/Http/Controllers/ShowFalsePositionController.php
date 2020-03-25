@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Bisection;
+use App\False_Position;
 
-class BisectionController extends Controller
+class ShowFalsePositionController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,11 +14,8 @@ class BisectionController extends Controller
      */
     public function index()
     {
-        //
-
-        //$bisections = Bisection::all()->toArray();
-        // return view('Root.bisection', compact('bisections'));
-        return view('Root.bisection');
+      $false_position = False_Position::all()->toArray();
+      return view('Root.show_false_position', compact('false_position'));
     }
 
     /**
@@ -39,8 +36,7 @@ class BisectionController extends Controller
      */
     public function store(Request $request)
     {
-
-
+        //
     }
 
     /**

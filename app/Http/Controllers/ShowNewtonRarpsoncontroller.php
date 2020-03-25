@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Bisection;
+use App\Newton_Raspson;
 
-class BisectionController extends Controller
+class ShowNewtonRarpsoncontroller extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,11 +14,8 @@ class BisectionController extends Controller
      */
     public function index()
     {
-        //
-
-        //$bisections = Bisection::all()->toArray();
-        // return view('Root.bisection', compact('bisections'));
-        return view('Root.bisection');
+        $newton_raspson = Newton_Raspson::all()->toArray();
+        return view('Root.show_newton_raspson', compact('newton_raspson'));
     }
 
     /**
@@ -39,8 +36,7 @@ class BisectionController extends Controller
      */
     public function store(Request $request)
     {
-
-
+        //
     }
 
     /**
